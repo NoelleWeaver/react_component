@@ -36,16 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.card-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two items per row */
-  gap: 20px; /* Adjust spacing between cards */
-  padding: 100px;
-  list-style-type: none;
-}
-
-.card-item {
-  padding: 10px;
-  text-align: center;
-}

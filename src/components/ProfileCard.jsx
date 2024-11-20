@@ -6,7 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 export default function ProfileCard({ profileImage, firstName, lastName, location, description, email, socialLinks }) {
-  const { github, instagram, facebook } = socialLinks; // Destructure social links
+  const { github, instagram, facebook } = socialLinks;
 
   return (
     <div className="container">
