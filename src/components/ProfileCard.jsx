@@ -27,13 +27,13 @@ export default function ProfileCard({ profileImage, firstName, lastName, locatio
                     </div>
                     <div className="links">
                         <a href={github} target="_blank" rel="noopener noreferrer" className="github-link">
-                            <ImGithub /> GitHub
+                            <ImGithub />
                         </a>
                         <a href={instagram} target="_blank" rel="noopener noreferrer" className="instagram-link">
-                            <FaInstagram /> Instagram
+                            <FaInstagram /> 
                         </a>
                         <a href={facebook} target="_blank" rel="noopener noreferrer" className="facebook-link">
-                            <FaFacebook /> Facebook
+                            <FaFacebook />
                         </a>
                     </div>
                 </div>
