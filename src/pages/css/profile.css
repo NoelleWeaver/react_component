@@ -1,0 +1,17 @@
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); 
+    gap: 20px; 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; 
+    list-style: none; 
+  }
+  
+  .card-item {
+    display: flex;
+    justify-content: center; /* Ensures cards are centered within grid cells */
+    align-items: center;
+  }
