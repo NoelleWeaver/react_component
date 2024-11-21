@@ -30,7 +30,8 @@ img {
     height: 0.5vh;
     background: #fff;
     margin: 5%;
-    margin-bottom: 0;
+    margin-bottom: -10%;
+    bottom: 0;
 }
 
 .link {
