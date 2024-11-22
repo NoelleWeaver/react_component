@@ -1,6 +1,10 @@
 html{
     scroll-behavior: smooth;
 }
+*{
+    margin: 0;
+    color: #fff;
+}
 
 .footer {
     background-color: #333;
@@ -8,38 +12,91 @@ html{
     width: 100vw;
     height: 60vh;
     color: white;
-    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
 }
 
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.email{
+    width: fit-content;
+    margin: 20px 0;
+}
+.location{
+    width: fit-content;
+}
+
+.socials{
+    width: fit-content;
+}
+
+
+.facebook-link:hover{
+    color: #3b5998;
+    transition: all 0.9s ease;
+    transform: translateY(-20px);
+}
+
+.instagram-link:hover{
+    color: #c13584;
+    transition: all 0.9s ease;
+    transform: translateY(-20px);
+}
+
+.github-link:hover{
+    color: #191414;
+    transition: all 0.9s ease;
+    transform: translateY(-20px);
+}
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    color: #fff;
+    width: fit-content;
+}
 img {
     float: right;
 }
 
 .name{
-    font-size: 5em;
-    float: left;
-    color: #ccc;
+    width: fit-content;
+    font-size: 70px;
+    line-height: 70px;
     font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.5s ease;
 }
 
-.line {
-    width: 90vw;
-    height: 0.5vh;
-    background: #fff;
-    margin: 5%;
-    margin-bottom: -10%;
-    bottom: 0;
+.description{
+    width: fit-content;
+    font-size: 15px;
 }
 
-.link {
-    color: #ccc;
-    transition: all 0.5s ease;
-    text-align: center;
+img {
+    width: 20vw;
+    float: right;
 }
-
 .to-top{
     width: 2rem;
     height: 2rem;

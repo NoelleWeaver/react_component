@@ -8,37 +8,50 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaArrowUp } from "react-icons/fa";
 
 
-export default function FooterTHeme({ name, routes, logo, location, email, github, instagram, facebook }) {
+export default function FooterTHeme({ name, routes, description, logo, location, email, github, instagram, facebook }) {
   
   return (
     <>
 
     <button className="to-top" onClick={() => window.scrollTo(0, 0)}><FaArrowUp /></button>
     <div className="footer">
-      <div className="name">{name}</div>
-      <div className="line"></div>
-      <div className="location"><FaLocationDot />{location}</div>
-      <div className="email">
-          <a href={`mailto:${email}`} className="email-link"><HiOutlineMail />{email}</a>
+      <div className="row">
+        <div className="col">
+          <div className="name">{name}</div>
+          <div className="description">{description}</div>
+        </div>
+        <div className="col">
+            <h3>Contact</h3>
+            <div className="location"><FaLocationDot />{location}</div>
+            <div className="email">
+                <a href={`mailto:${email}`} className="email-link"><HiOutlineMail />{email}</a>
+            </div>
+            <div className="socials">
+                <a href={github} target="_blank" rel="noopener noreferrer" className="github-link">
+                    <ImGithub />
+                </a>
+                <a href={instagram} target="_blank" rel="noopener noreferrer" className="instagram-link">
+                    <FaInstagram /> 
+                </a>
+                <a href={facebook} target="_blank" rel="noopener noreferrer" className="facebook-link">
+                    <FaFacebook />
+                </a>
+            </div>
+        </div>
+        <div className="col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href={routes.home}>Home</a></li>
+            <li><a href={routes.about}>About</a></li>
+            <li><a href={routes.testimonials}>Testimonials</a></li>
+            <li><a href={routes.faq}>FAQ</a></li>
+          </ul>
+        </div>
+        <div className="col">
+           <img src={logo} />
+        </div>
+     
       </div>
-      <div className="link">
-        <a href={routes.home}>Home</a>
-        <a href={routes.about}>About</a>
-        <a href={routes.testimonials}>Testimonials</a>
-        <a href={routes.faq}>FAQ</a>
-      </div>
-      <div className="socials">
-          <a href={github} target="_blank" rel="noopener noreferrer" className="github-link">
-              <ImGithub />
-          </a>
-          <a href={instagram} target="_blank" rel="noopener noreferrer" className="instagram-link">
-              <FaInstagram /> 
-          </a>
-          <a href={facebook} target="_blank" rel="noopener noreferrer" className="facebook-link">
-              <FaFacebook />
-          </a>
-      </div>
-      <img src={logo} />
     </div>
     </>
   );
