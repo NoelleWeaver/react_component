@@ -4,8 +4,8 @@ import ProfileCard from '../components/profileCard/ProfileCard'
 function App() {
     return (
         <div className="App">
-            <a href="/profile">hello</a>
-            <a href="/footer">goodbye</a>
+            <a className="profile-button" href="/profile">Profile</a>
+            <a className="footer-button" href="/footer">Footer</a>
         </div>
     );
 }
