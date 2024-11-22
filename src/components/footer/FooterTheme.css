@@ -1,0 +1,191 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.footer {
+    background-color: #333;
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    color: white;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 15px;
+    width: 5rem;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.email{
+    width: fit-content;
+    margin: 20px 0;
+}
+.footer-location{
+    width: fit-content;
+}
+
+.email-link{
+    color: #fff;
+    width: fit-content;
+
+    margin-left: -8.5rem;
+}
+
+.socials{
+    width: fit-content;
+}
+
+.github-link{
+    color: #fff;
+}
+
+.instagram-link{
+    color: #fff;
+}
+.facebook-link{
+    color: #fff;
+}
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    color: #fff;
+    width: fit-content;
+}
+
+#contact{
+    margin-top:7rem;
+    margin-left: -4rem;
+}
+
+#links{
+    margin-top: 7rem;
+    margin-left: 1rem;
+}
+
+.home{
+    color: #fff;
+}
+
+.about{
+    color: #fff;
+}
+
+.testimonials{
+    color: #fff;
+}
+
+.faq{
+    color: #fff;
+}
+
+.home:hover{
+    color: #6e8efb;
+    transition: all 0.9s ease;
+    transform: translateY(-20px);
+}
+
+.about:hover{
+    color: #6e8efb;
+    transition: all 0.9s ease;
+    transform: translateY(-20px);
+}
+
+.testimonials:hover{
+    color: #6e8efb;
+    transition: all 0.9s ease;
+    transform: translateY(-20px);
+}
+
+.faq:hover{
+    color: #6e8efb;
+    transition: all 0.9s ease;
+    transform: translateY(-20px);
+}
+
+#links h3{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.name{
+    width: fit-content;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: bold;
+}
+
+.description{
+    width: fit-content;
+    font-size: 15px;
+}
+
+img {
+    width: 20vw;
+    float: right;
+}
+
+.logo{
+    position: relative;
+    margin-right: 1rem;
+    top: 7rem;
+}
+
+.to-top{
+    width: 2rem;
+    height: 2rem;
+    background-color:#fff;
+    color: #333;
+    float: left;
+    border-radius: 100%;
+    border: none;
+    margin-top: -3rem;
+    margin-left: 2rem;
+}
+
+.to-top:hover{
+    transition: all 0.9s ease;
+    transform: translateY(-20px);
+}
+
+.github-link:hover{
+    color: #191414;
+    transition: all 0.9s ease;
+    transform: translateY(-20px);
+}
+
+.instagram-link:hover{
+    color: #c13584;
+    transition: all 0.9s ease;
+    transform: translateY(-20px);
+}
+
+.facebook-link:hover{
+    color: #3b5998;
+    transition: all 0.9s ease;
+    transform: translateY(-20px);
+}
+.socials{
+    color: #fff;
+}

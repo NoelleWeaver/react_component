@@ -13,17 +13,26 @@ export default function FooterTHeme({ name, routes, description, logo, location,
   return (
     <>
 
-    <button className="to-top" onClick={() => window.scrollTo(0, 0)}><FaArrowUp /></button>
     <div className="footer">
+    <button className="to-top" onClick={() => window.scrollTo(0, 0)}><FaArrowUp /></button>
       <div className="row">
         <div className="col">
           <div className="name">{name}</div>
           <div className="description">{description}</div>
         </div>
-        <div className="col">
+        <div className="col" id="links">
+          <h3>Links</h3>
+          <ul>
+            <li><a className="home" href={routes.home}>Home</a></li>
+            <li><a className="about" href={routes.about}>About</a></li>
+            <li><a className="testimonials" href={routes.testimonials}>Testimonials</a></li>
+            <li><a className="faq" href={routes.faq}>FAQ</a></li>
+          </ul>
+        </div>
+        <div className="col" id="contact">
             <h3>Contact</h3>
-            <div className="location"><FaLocationDot />{location}</div>
-            <div className="email">
+            <div className="footer-location"><FaLocationDot />{location}</div>
+            <div className="footer-email">
                 <a href={`mailto:${email}`} className="email-link"><HiOutlineMail />{email}</a>
             </div>
             <div className="socials">
@@ -39,16 +48,7 @@ export default function FooterTHeme({ name, routes, description, logo, location,
             </div>
         </div>
         <div className="col">
-          <h3>Links</h3>
-          <ul>
-            <li><a href={routes.home}>Home</a></li>
-            <li><a href={routes.about}>About</a></li>
-            <li><a href={routes.testimonials}>Testimonials</a></li>
-            <li><a href={routes.faq}>FAQ</a></li>
-          </ul>
-        </div>
-        <div className="col">
-           <img src={logo} />
+           <img className="logo" src={logo} />
         </div>
      
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileCard from '../components/ProfileCard';
+import ProfileCard from '../components/profileCard/ProfileCard';
 import './css/profile.css';
 
 function Profile() {
