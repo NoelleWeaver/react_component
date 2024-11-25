@@ -8,7 +8,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaArrowUp } from "react-icons/fa";
 
 
-export default function FooterTHeme({ name, routes, description, logo, location, email, github, instagram, facebook }) {
+export default function FooterTheme({ name, routes, description, logo, location, email, github, instagram, facebook }) {
   
   return (
     <>

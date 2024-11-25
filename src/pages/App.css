@@ -54,9 +54,22 @@
   border: none;
   cursor: pointer;
 }
+
+.gallery-button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 .profile-button:hover{
   background-color: #555;
 }
 .footer-button:hover{
+  background-color: #555;
+}
+.gallery-button:hover{
   background-color: #555;
 }

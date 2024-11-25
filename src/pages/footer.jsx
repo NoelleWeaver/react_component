@@ -1,6 +1,6 @@
 import React from 'react';
 import FooterTheme from '../components/footer/FooterTheme';
-import './css/footer.css';
+import { FaArrowLeft } from "react-icons/fa";
 
 function Footer() {
     let info = {
@@ -21,7 +21,9 @@ function Footer() {
     }    
 
     return (
+
         <>
+            <a href="/"><FaArrowLeft /></a>
             <div style={{ padding: '20px', textAlign: 'center' }}>
                 <FooterTheme  description = {info.description} routes = {info.routes} name = {info.name} logo = {info.logo} location = {info.location} email = {info.email} github = {info.github} instagram = {info.instagram} facebook = {info.facebook}/>
             </div>

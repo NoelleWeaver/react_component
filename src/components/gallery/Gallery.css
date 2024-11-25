@@ -1,0 +1,26 @@
+element{
+    webkit-appearance:values;
+}
+
+.gallery-back {
+    position: relative;
+    top: 2rem;
+    left: -2rem;
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.gallery-container {
+    background-color: #ffffff;
+    width: 90vw;
+    height: 47vw;
+    border-radius: 20px;
+    overflow-y: scroll;
+   
+}
+
+.image {
+    display: none;
+}

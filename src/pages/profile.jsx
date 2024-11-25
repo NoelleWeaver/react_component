@@ -1,6 +1,7 @@
 import React from 'react';
 import ProfileCard from '../components/profileCard/ProfileCard';
 import './css/profile.css';
+import { FaArrowLeft } from "react-icons/fa";
 
 function Profile() {
     let info = {
@@ -15,9 +16,12 @@ function Profile() {
          facebook: "https://facebook.com/johndoe"
     }    
     return (
-        <div style={{ padding: '20px', textAlign: 'center' }}>
-            <ProfileCard  profileImage = {info.profileImage} firstName = {info.firstName} lastName = {info.lastName} location = {info.location} description = {info.description} email = {info.email} github = {info.github} instagram = {info.instagram} facebook = {info.facebook}/>
-        </div>
+        <>
+            <a href="/"><FaArrowLeft /></a>
+            <div style={{ padding: '20px', textAlign: 'center' }}>
+                <ProfileCard  profileImage = {info.profileImage} firstName = {info.firstName} lastName = {info.lastName} location = {info.location} description = {info.description} email = {info.email} github = {info.github} instagram = {info.instagram} facebook = {info.facebook}/>
+            </div>
+        </>
     );
 }
 
