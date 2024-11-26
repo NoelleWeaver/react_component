@@ -5,7 +5,6 @@ import GalleryComponent from '../components/gallery/GalleryComponent';
 
 function Gallery() {
     let image = {
-            pic1: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1731603743/Animal-Adoption/download%20%283%29.jpg.jpg",
             pic2: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1731603988/Animal-Adoption/sandy-new_orig.jpeg.jpg",
             pic3: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample-3.jpg",
             pic4: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample.jpg",
@@ -14,7 +13,6 @@ function Gallery() {
             pic7: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/woman-on-a-football-field.jpg",
             pic8: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample-2.jpg",
             pic9: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/cup-on-a-table.jpg",
-            pic10: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/upscale-face-1.jpg",
             pic11: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/dessert-on-a-plate.jpg",
             pic12: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/coffee.jpg",
             pic13: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/man-portrait.jpg",
@@ -43,7 +41,7 @@ function Gallery() {
         <>
             <a className="gallery-back" href="/"><FaArrowLeft /></a>
             <div style={{ padding: '20px', textAlign: 'center' }}>
-                <GalleryComponent  pic1 = {image.pic1} pic2 = {image.pic2} pic3 = {image.pic3} pic4 = {image.pic4} pic5 = {image.pic5} pic6 = {image.pic6} pic7 = {image.pic7} pic8 = {image.pic8} pic9 = {image.pic9} pic10 = {image.pic10} pic11 = {image.pic11} pic12 = {image.pic12} pic13 = {image.pic13} pic14 = {image.pic14} pic15 = {image.pic15} pic16 = {image.pic16} pic17 = {image.pic17} pic18 = {image.pic18} pic19 = {image.pic19} pic20 = {image.pic20} pic21 = {image.pic21} pic22 = {image.pic22} pic23 = {image.pic23} pic24 = {image.pic24} pic25 = {image.pic25}  pic26 = {image.pic26} pic27 = {image.pic27} pic28 = {image.pic28} pic29 = {image.pic29} pic30 = {image.pic30} pic31 = {image.pic31} pic32 = {image.pic32}/>
+                <GalleryComponent pic2 = {image.pic2} pic3 = {image.pic3} pic4 = {image.pic4} pic5 = {image.pic5} pic6 = {image.pic6} pic7 = {image.pic7} pic8 = {image.pic8} pic9 = {image.pic9} pic11 = {image.pic11} pic12 = {image.pic12} pic13 = {image.pic13} pic14 = {image.pic14} pic15 = {image.pic15} pic16 = {image.pic16} pic17 = {image.pic17} pic18 = {image.pic18} pic19 = {image.pic19} pic20 = {image.pic20} pic21 = {image.pic21} pic22 = {image.pic22} pic23 = {image.pic23} pic24 = {image.pic24} pic25 = {image.pic25}  pic26 = {image.pic26} pic27 = {image.pic27} pic28 = {image.pic28} pic29 = {image.pic29} pic30 = {image.pic30} pic31 = {image.pic31} pic32 = {image.pic32}/>
             </div>
         </>
     );
