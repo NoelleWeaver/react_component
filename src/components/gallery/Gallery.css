@@ -8,17 +8,13 @@
     text-align: center;
 }
 
-.gallery{
-    overflow: hidden;
-}
 
 .gallery-container {
     background-color: #ffffff;
     width: 1400px;
-    height: 47vw;
+    height: 470vh;
     margin: 20px auto;
     border-radius: 20px;
-    overflow-y: scroll;
     columns: 4;
     column-gap: 20px;
 }
