@@ -1,17 +1,18 @@
 import React from "react";
 import './Gallery.css';
 
-export default function GalleryComponent({profileImage, description}) {
+export default function GalleryComponent({profileImage}) {
   
     return (
       <>
+      <body className="gallery">
+        
+      
         <div className="gallery-container">
-          <div className='gallery-card'>
-              <div className="gallery-img-box">
-                <p>{description}</p>
-                  <img className="image" src={profileImage} />
-              </div>
+          <div className="gallery-box">
+            <img className="image" src={profileImage} />
           </div>
         </div>
+      </body>
       </>
     )}
