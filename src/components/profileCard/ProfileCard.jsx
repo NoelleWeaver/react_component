@@ -8,6 +8,7 @@ import { FaLocationDot } from "react-icons/fa6";
 export default function ProfileCard({ profileImage, firstName, lastName, location, description, email, github, facebook, instagram  }) {
 
   return (
+    <body class="body">
     <div className="container">
         <div className='card'>
             <div className="img-box">
@@ -39,5 +40,6 @@ export default function ProfileCard({ profileImage, firstName, lastName, locatio
             </div>
         </div>
     </div>
+    </body>
   );
 }

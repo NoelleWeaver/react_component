@@ -1,31 +1,26 @@
 .gallery-back {
     position: relative;
     top: 2rem;
-    left: -2rem;
+    left: 1rem;
     background-color: #fff;
     border-radius: 100%;
     padding: 5px;
     text-align: center;
 }
 
-
 .gallery-container {
     background-color: #fff;
     width: 1400px;
-    height: 100vh;
+    height: auto;
     margin: 20px auto;
     columns: 4;
     column-gap: 10px;
     padding: 10px;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 .gallery-box {
     width: 100%;
-    break-inside: avoid;   
     margin-bottom: -30rem;
-    
 }
 
 .gallery-container .gallery-box img {
@@ -34,10 +29,6 @@
     padding: 3px;
 }
 
-.gallery {
-    overflow: hidden;
-    background: blue;
-}
 
 @media (max-width: 1200px) {
     .gallery-container{
@@ -49,7 +40,6 @@
 
 @media (max-width: 768px) {
     .gallery-container{
-        width: calc(100% -40px);
         columns: 2;
     }
 
@@ -57,7 +47,6 @@
 
 @media (max-width: 460px) {
     .gallery-container{
-        width: calc(100% -40px);
         columns: 1;
     }
 
