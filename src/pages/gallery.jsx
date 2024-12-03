@@ -5,43 +5,163 @@ import GalleryComponent from '../components/gallery/GalleryComponent';
 
 function Gallery() {
     let image = {
-            pic2: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1731603988/Animal-Adoption/sandy-new_orig.jpeg.jpg",
-            pic3: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample-3.jpg",
-            pic4: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample.jpg",
-            pic5: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample-4.jpg",
-            pic6: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample-5.jpg",
-            pic7: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/woman-on-a-football-field.jpg",
-            pic8: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample-2.jpg",
-            pic9: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/cup-on-a-table.jpg",
-            pic11: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/dessert-on-a-plate.jpg",
-            pic12: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/coffee.jpg",
-            pic13: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/man-portrait.jpg",
-            pic14: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/man-on-a-street.jpg",
-            pic15: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322293/samples/look-up.jpg",
-            pic16: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/chair-and-coffee-table.jpg",
-            pic17: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322293/samples/man-on-a-escalator.jpg",
-            pic18: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322293/samples/smile.jpg",
-            pic19: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322293/samples/outdoor-woman.jpg",
-            pic20: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322293/samples/breakfast.jpg",
-            pic21: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322292/samples/balloons.jpg",
-            pic22: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322292/samples/shoe.jpg",
-            pic23: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322289/samples/two-ladies.jpg",
-            pic24: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322286/samples/ecommerce/leather-bag-gray.jpg",
-            pic25: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322286/samples/ecommerce/car-interior-design.jpg",
-            pic26: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322286/samples/landscapes/beach-boat.jpg",
-            pic27: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322286/samples/landscapes/architecture-signs.jpg",
-            pic28: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322286/samples/animals/three-dogs.jpg",
-            pic29: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322286/samples/people/jazz.jpg",
-            pic30: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322285/samples/food/fish-vegetables.jpg",
-            pic31: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322285/samples/bike.jpg",
-            pic32: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322285/samples/animals/reindeer.jpg"
-}    
+        pic2: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1731603988/Animal-Adoption/sandy-new_orig.jpeg.jpg",
+            alt: "Black and white cat outdoors.",
+            name: "cat"
+        },
+        pic3: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample-3.jpg",
+            alt: "Basketball game.",
+            name: "Basketball"
+        },
+        pic4: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample.jpg",
+            alt: "Dog kissing woman",
+            name: "Dog and woman"
+        },
+        pic5: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample-4.jpg",
+            alt: "Table with food",
+            name: "food"
+        },
+        pic6: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample-5.jpg",
+            alt: "Blue floating shoe",
+            name: "shoe"
+        },
+        pic7: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/woman-on-a-football-field.jpg",
+            alt: "Woman sitting in front of soccer net.",
+            name: "woman sitting"
+        },
+        pic8: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322295/cld-sample-2.jpg",
+            alt: "Snowy mountains.",
+            name: "mountains"
+        },
+        pic9: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/cup-on-a-table.jpg",
+            alt: "Coffee on a table.",
+            name: "coffee"
+        },
+        pic11: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/dessert-on-a-plate.jpg",
+            alt: "Dessert on a plate.",
+            name: "dessert"
+        },
+        pic12: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/coffee.jpg",
+            alt: "Steaming cup of coffee.",
+            name: "coffee-steaming"
+        },
+        pic13: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/man-portrait.jpg",
+            alt: "Portrait of a man.",
+            name: "man"
+        },
+        pic14: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/man-on-a-street.jpg",
+            alt: "Man on a street.",
+            name: "street"
+        },
+        pic15: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322293/samples/look-up.jpg",
+            alt: "Buildings from below.",
+            name: "buildings"
+        },
+        pic16: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322294/samples/chair-and-coffee-table.jpg",
+            alt: "Chair and coffee table.",
+            name: "chair"
+        },
+        pic17: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322293/samples/man-on-a-escalator.jpg",
+            alt: "Man on an escalator.",
+            name: "escalator"
+        },
+        pic18: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322293/samples/smile.jpg",
+            alt: "Person smiling.",
+            name: "smile"
+        },
+        pic19: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322293/samples/outdoor-woman.jpg",
+            alt: "Woman outdoors.",
+            name: "outdoors"
+        },
+        pic20: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322293/samples/breakfast.jpg",
+            alt: "Breakfast spread.",
+            name: "breakfast"
+        },
+        pic21: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322292/samples/balloons.jpg",
+            alt: "Colorful balloons.",
+            name: "balloons"
+        },
+        pic22: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322292/samples/shoe.jpg",
+            alt: "Stylish shoe.",
+            name: "shoe"
+        },
+        pic23: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322289/samples/two-ladies.jpg",
+            alt: "Two women talking.",
+            name: "conversation"
+        },
+        pic24: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322286/samples/ecommerce/leather-bag-gray.jpg",
+            alt: "Gray leather bag.",
+            name: "bag"
+        },
+        pic25: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322286/samples/ecommerce/car-interior-design.jpg",
+            alt: "Car interior design.",
+            name: "car"
+        },
+        pic26: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322286/samples/landscapes/beach-boat.jpg",
+            alt: "Boat on a beach.",
+            name: "boat"
+        },
+        pic27: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322286/samples/landscapes/architecture-signs.jpg",
+            alt: "Architectural signage.",
+            name: "architecture"
+        },
+        pic28: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322286/samples/animals/three-dogs.jpg",
+            alt: "Three dogs together.",
+            name: "dogs"
+        },
+        pic29: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322286/samples/people/jazz.jpg",
+            alt: "Jazz musician.",
+            name: "jazz"
+        },
+        pic30: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322285/samples/food/fish-vegetables.jpg",
+            alt: "Fish and vegetables.",
+            name: "fish"
+        },
+        pic31: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322285/samples/bike.jpg",
+            alt: "Bicycle on a trail.",
+            name: "bike"
+        },
+        pic32: {
+            url: "https://res.cloudinary.com/dynkv0p8x/image/upload/v1730322285/samples/animals/reindeer.jpg",
+            alt: "Reindeer in snow.",
+            name: "reindeer"
+        }
+    };
 
     return (
         <>
             <a className="gallery-back" href="/"><FaArrowLeft /></a>
             <div style={{ padding: '20px', textAlign: 'center' }}>
-                <GalleryComponent pic2 = {image.pic2} pic3 = {image.pic3} pic4 = {image.pic4} pic5 = {image.pic5} pic6 = {image.pic6} pic7 = {image.pic7} pic8 = {image.pic8} pic9 = {image.pic9} pic11 = {image.pic11} pic12 = {image.pic12} pic13 = {image.pic13} pic14 = {image.pic14} pic15 = {image.pic15} pic16 = {image.pic16} pic17 = {image.pic17} pic18 = {image.pic18} pic19 = {image.pic19} pic20 = {image.pic20} pic21 = {image.pic21} pic22 = {image.pic22} pic23 = {image.pic23} pic24 = {image.pic24} pic25 = {image.pic25}  pic26 = {image.pic26} pic27 = {image.pic27} pic28 = {image.pic28} pic29 = {image.pic29} pic30 = {image.pic30} pic31 = {image.pic31} pic32 = {image.pic32}/>
+                <GalleryComponent {...image} />
             </div>
         </>
     );

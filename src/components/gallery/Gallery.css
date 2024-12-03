@@ -28,7 +28,27 @@
     border-radius: 20px;
     padding: 3px;
 }
-
+.gallery-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-container .gallery-box .image-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gallery-container .gallery-box:hover .image-name {
+    opacity: 1;
+  }
 
 @media (max-width: 1200px) {
     .gallery-container{
