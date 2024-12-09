@@ -44,6 +44,8 @@
   color: white;
   border: none;
   cursor: pointer;
+  text-align: center;
+  text-justify: center !important;
 }
 
 .footer-button{
