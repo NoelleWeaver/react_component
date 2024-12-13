@@ -50,7 +50,7 @@
     transform-origin: left;
     transform: skewY(45deg);
     transition: 0.5s;
-    border-bottom: 395px solid #e8edf4;
+    border-bottom: 369px solid #e8edf4;
 }
 
 .container .card {

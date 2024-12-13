@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-
+html{ overflow-x: hidden;}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -38,32 +38,34 @@
 }
 
 .profile-button{
-  margin-top: 20px;
+  margin-top: 20rem;
   padding: 10px 20px;
   background-color: #61dafb;
   color: white;
   border: none;
   cursor: pointer;
   text-align: center;
-  text-justify: center !important;
+  position: relative;
 }
 
 .footer-button{
-  margin-top: 20px;
+  margin-top: 20rem;
   padding: 10px 20px;
   background-color: #61dafb;
   color: white;
   border: none;
   cursor: pointer;
+  position: relative;
 }
 
 .gallery-button{
-  margin-top: 20px;
+  margin-top: 20rem;
   padding: 10px 20px;
   background-color: #61dafb;
   color: white;
   border: none;
   cursor: pointer;
+  position: relative;
 }
 
 .profile-button:hover{
