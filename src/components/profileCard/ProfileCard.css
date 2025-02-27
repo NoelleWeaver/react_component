@@ -9,9 +9,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     font-family: Arial, sans-serif;
     background: #d7e5f5;
     overflow-x: hidden;
+    margin-left: -1rem;
+    margin-top:-5rem;
 }
 
 .container {
@@ -45,7 +48,7 @@
     top: -15px;
     left: -15px;
     width: 15px;
-    height: 50%;
+    height: 40.5rem;
     background: #e8edf4;
     transform-origin: left;
     transform: skewY(45deg);
@@ -76,6 +79,7 @@
     position: relative;
     padding: 20px;
     background: white;
+    height: 25rem;
 }
 
 .card{
@@ -88,6 +92,7 @@
 .space{
     height: 150px;
     z-index: 500;
+    background-color: blue;
 }
 
 .img-box img{
@@ -104,6 +109,7 @@
     margin-top: -75px;
     padding: 5px;
     background: white;
+    background-color: blue;
 }
 
 .title{
@@ -126,7 +132,7 @@ a{
     display: inline-block;
     padding: 8px 12px;
     background: #6e8efb;
-    color: white;
+    color: rgb(52, 52, 52);
     text-decoration: none;
     border-radius: 5px;
     margin: 10px 0;
@@ -135,6 +141,8 @@ a{
 
 .links {
     width: 100%;
+    display: flex;
+    place-self: center;
 }
 
 .links a:hover {

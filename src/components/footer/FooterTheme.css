@@ -55,6 +55,8 @@ h3{
 
 .socials{
     width: fit-content;
+    display: flex;
+    margin-top: 10px;
 }
 
 .github-link{
